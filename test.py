@@ -1,13 +1,23 @@
-# init = input('请输入需要计算第几项斐波那契数列（需要是一个正整数）：')
-# while True:
-#     if not init.isalnum():
-#         init = input('输入不正确，请重新输入一个正整数：')
+class A:
+    x = 250
+    def __init__(self, x):
+        self.x = x
+        
+class B:
+    x = 520
+    def __init__(self, x):
+        self.x = x
 
-def fib(n):
-    num1, num2 = 0, 1
-    for i in range(n):
-        num1, num2 = num2, num1 + num2
-    print(num1)
+class C(A):
+    c = 10
+    def __init__(self, c):
+        super().__init__(x)
+        self.c = c
 
-# print('结果为：')
-# fib(int(init))
+class D(B):
+    def __init__(self, d):
+        super().__init__(x)
+        self.d = d
+
+class E(C, D):
+    pass
