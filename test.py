@@ -10,12 +10,12 @@ class B:
 
 class C(A):
     c = 10
-    def __init__(self, c):
+    def __init__(self, x, c):
         super().__init__(x)
         self.c = c
 
 class D(B):
-    def __init__(self, d):
+    def __init__(self, x, d):
         super().__init__(x)
         self.d = d
 
