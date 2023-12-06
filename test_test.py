@@ -2,5 +2,5 @@ from test import *
 
 class TestFlow:
   def test_01(self):
-    e = E()
+    e = E(200, 122)
     print(e.x)
